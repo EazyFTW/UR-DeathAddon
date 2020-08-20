@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'All'
+version ''
+archivesBaseName = 'Death_v1.0.0'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.2-R0.1-SNAPSHOT'
+    compileOnly files('libs/UltraRegions.jar')
+}
+
+repositories {
+    maven { url = 'https://hub.spigotmc.org/nexus/content/groups/public/' }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
