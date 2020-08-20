@@ -24,7 +24,7 @@ public class DeathAddon extends Flag {
 
     @Override
     public String getDescription() {
-        return "Death";
+        return "If disallowed, stops players from dying.";
     }
 
     @Override
